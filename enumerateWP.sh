@@ -4,7 +4,7 @@
 if [ $# -eq 0 ] 
 then
 	echo -e "You Need to Specify the target URL and Option\n"
-	echo -e "Option: version,theme,users,plugine\n"
+	echo -e "Option: version,theme,users,plugins\n"
 	echo -e "Usage:"
 	echo -e "\t$0 <URL> <Option>"
 	exit 1 
@@ -37,8 +37,8 @@ if [[ $options == "theme" ]];then
 	get_theme
 
 
-elif [[ $options == "plugine" ]];then
-	echo "[+] Start Enumeration Plugine.... "
+elif [[ $options == "plugins" ]];then
+	echo "[+] Start Enumeration plugins.... "
 	get_plugine
 
 elif [[ $options == "users" ]];then
